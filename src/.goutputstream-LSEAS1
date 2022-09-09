@@ -1,0 +1,93 @@
+
+const vertices = ['A', 'B', 'C', 'D', 'E']
+
+const adjacencyList = [
+	['B', 'D'],
+	['A', 'C'],
+	['B', 'D', 'E'],
+	['A', 'C', 'E'],
+	['C', 'D']
+]
+
+function findAdjacencies (node) {
+	const index = vertices.indexOf(node)
+	return adjacencyList[index]
+}
+
+
+
+// const vertices = ['A', 'B', 'C', 'D', 'E']
+
+// const adjacencyMatrix = [
+	// [0, 1, 0, 1, 0],
+	// [1, 0, 1, 0, 0],
+	// [0, 1, 0, 1, 1],
+	// [1, 0, 1, 0, 1],
+	// [0, 0, 1, 1, 0]
+// ]
+
+// function findAdjacencies (node) {
+	// const adjacentNodes = []
+	
+	// const index = vertices.indexOf(node)
+	// const row = adjacencyMatrix[index]
+	
+	// row.some((vertex, vertexIndex) => {
+		// if (vertex === 1) adjacentNodes.push(vertices[vertexIndex])
+	// })
+	
+	// return adjacentNodes
+// }
+
+// console.log(findAdjacencies('A'))
+
+// function isConnected (vertex1, vertex2) {
+
+	// const vertex1Index = vertices.indexOf(vertex1)
+	// const vertex2Index = vertices.indexOf(vertex2)
+	// const row = adjacencyMatrix[vertex1Index]
+	
+	// return (row[vertex2Index] === 1) ? true : false
+	
+// }
+
+// console.log(isConnected('A', 'E'))
+
+
+// const vertices = ['A', 'B', 'C', 'D', 'E']
+
+// const edges = [
+	// ['A', 'B'],
+	// ['A', 'D'],
+	// ['B', 'C'],
+	// ['C', 'D'],
+	// ['C', 'E'],
+	// ['D', 'E'],	
+// ]
+
+// Find Adjacent Nodes
+
+// function findAdjacentNodes (node) {
+	// const adjacentNodes = []
+	
+	// for (let edge of edges) {
+		// if (edge.includes(node)) {
+			// const index = edge.indexOf(node)
+			// if (index >= 0) adjacentNodes.push(edge[(index === 0) ? 1 : 0])
+		// }
+	// }
+	
+	// return adjacentNodes
+// }
+
+// console.log(findAdjacentNodes('C'))
+
+// isConnected
+
+// function isConnected (vertex1, vertex2) {		
+	// return edges.some((edge) => {
+		// if (edge.includes(vertex1) && edge.includes(vertex2)) return true
+	// })
+// }
+
+// console.log(isConnected('A', 'B'))

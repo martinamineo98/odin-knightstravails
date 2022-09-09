@@ -1,0 +1,23 @@
+{
+  "name": "odin-knightstravails",
+  "version": "1.0.0",
+  "description": "The Odin Project's Knight Travails",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martinamineo98/odin-knightstravails.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/martinamineo98/odin-knightstravails/issues"
+  },
+  "homepage": "https://github.com/martinamineo98/odin-knightstravails#readme",
+  "devDependencies": {
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  }
+}
